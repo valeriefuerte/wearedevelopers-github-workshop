@@ -1,0 +1,51 @@
+{
+  "template_version": "0.2.0",
+  "repository": "frye/pets-devsecops-workshop-template",
+  "status": "source-level-validation-passed-platform-and-human-gates-pending",
+  "local_checks": {
+    "unittest_command": "python3 -m unittest discover -s content/devsecops/tests -v",
+    "tests": 70,
+    "markdown_files": 28,
+    "local_links": 236,
+    "command_config_snippets": 42,
+    "validate_kit": "passed",
+    "prepare_script_syntax": "passed",
+    "actionlint": "unavailable-not-run",
+    "deterministic_kit_builds": "two-builds-byte-identical",
+    "independent_history": "passed-no-original-Git-object",
+    "core_workflow_parity": "passed",
+    "release_guard_receipt_contract": "passed",
+    "codespaces_run": false
+  },
+  "candidate_live_gates": {
+    "template_main_ci": "pending-no-v0.2.0-run",
+    "template_harmless_pr": "pending-no-v0.2.0-run",
+    "template_codeql_baseline": "pending-no-v0.2.0-run",
+    "fresh_github_template_copy": "unverified-not-created",
+    "codespaces_primary_route": "unverified-not-run",
+    "learner_labs_6_7": "pending-no-live-learner-rehearsal",
+    "learner_ruleset_release_artifact": "unverified-no-authorized-learner-run",
+    "learner_timing": "unverified-not-rehearsed",
+    "other_repositories_modified": false
+  },
+  "historical_v0_1_0_evidence": {
+    "main_ci": "https://github.com/frye/pets-devsecops-workshop-template/actions/runs/35960087578",
+    "main_ci_result": "api-tests-and-client-build-success",
+    "harmless_pr": "https://github.com/frye/pets-devsecops-workshop-template/pull/1",
+    "harmless_pr_checks": {
+      "api_and_build": "https://github.com/frye/pets-devsecops-workshop-template/actions/runs/35960139147",
+      "dependency_review": "https://github.com/frye/pets-devsecops-workshop-template/actions/runs/35960139134/attempts/2",
+      "result": "all-three-core-checks-success",
+      "lifecycle": "closed-without-merge"
+    },
+    "codeql_baseline": {
+      "run": "https://github.com/frye/pets-devsecops-workshop-template/actions/runs/35960102321",
+      "result": "success",
+      "finding": "py/flask-debug",
+      "location": "app/server/app.py:83",
+      "alert": "https://github.com/frye/pets-devsecops-workshop-template/security/code-scanning/1",
+      "state": "open-intentionally"
+    },
+    "dependency_review_initial_attempt": "graph-unavailable-error-not-an-advisory; comparison-later-ready; rerun-success; cause-not-established"
+  }
+}
