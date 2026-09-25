@@ -19,3 +19,11 @@ Does the API expose vulnerable dependencies or unhandled injection vectors? and 
 - **Blind Spots:**
   1. API functional assertions passed at this revision; however, startup configuration and runtime startup behavior were not tested.
   2. Potential vulnerabilities in third-party dependencies or unhandled authentication logic are not covered by functional unit tests and require static security analysis (SAST / CodeQL).
+
+  # 2. Plan the shelter's security checks
+
+| Asset and risk | Control to complete | Owner to assign | Acceptance result |
+|---|---|---|---|
+| API process: direct startup enables a debugger | Safe default plus regression test | ___ | `debug=False` asserted and targeted CodeQL finding removed |
+| Dependency change: introduces a vulnerable package | ___ | Maintainer | High-severity introduction fails review; repaired version passes |
+| Repository history: contains a credential | Repository push protection and exposure response | ___ | Verified nonfunctional fixture blocked; clean retry succeeds |
