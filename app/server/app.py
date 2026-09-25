@@ -80,4 +80,4 @@ def get_dog(id: int) -> tuple[Response, int] | Response:
 ## HERE
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5100) # Port 5100 to avoid macOS conflicts
+    app.run(debug=False, port=5100) # Port 5100 to avoid macOS conflicts
